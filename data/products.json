@@ -1,0 +1,1135 @@
+{
+  "brands": [
+    {
+      "id": "liugong",
+      "name": "LiuGong 柳工",
+      "country": "Китай"
+    },
+    {
+      "id": "sinomach",
+      "name": "SINOMACH 国机重工",
+      "country": "Китай"
+    },
+    {
+      "id": "sagmoto",
+      "name": "SAGMOTO 陕汽",
+      "country": "Китай"
+    }
+  ],
+  "categories": [
+    {
+      "id": "excavators",
+      "name": "Экскаваторы",
+      "icon": "fa-digging"
+    },
+    {
+      "id": "loaders",
+      "name": "Погрузчики",
+      "icon": "fa-truck-loading"
+    },
+    {
+      "id": "graders",
+      "name": "Грейдеры",
+      "icon": "fa-road"
+    },
+    {
+      "id": "rollers",
+      "name": "Катки",
+      "icon": "fa-circle"
+    },
+    {
+      "id": "trucks",
+      "name": "Самосвалы",
+      "icon": "fa-truck"
+    },
+    {
+      "id": "special",
+      "name": "Спецтехника",
+      "icon": "fa-cogs"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "brand": "liugong",
+      "category": "excavators",
+      "name": "HEX 933E",
+      "nameRu": "Гусеничный экскаватор",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~33 т"
+        },
+        {
+          "icon": "fa-cog",
+          "text": "Двигатель: Cummins"
+        }
+      ],
+      "image": "images/liugong-hex933e.png"
+    },
+    {
+      "id": 2,
+      "brand": "liugong",
+      "category": "excavators",
+      "name": "HEX 936E",
+      "nameRu": "Гусеничный экскаватор",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~36 т"
+        },
+        {
+          "icon": "fa-cog",
+          "text": "Двигатель: Cummins"
+        }
+      ],
+      "image": "images/liugong-hex936e.png"
+    },
+    {
+      "id": 3,
+      "brand": "liugong",
+      "category": "excavators",
+      "name": "BEV 820TE",
+      "nameRu": "Электрический экскаватор",
+      "badge": "bg-success",
+      "badgeText": "Электро",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-battery-full",
+          "text": "Батарея: 70.5 кВтч"
+        },
+        {
+          "icon": "fa-tint",
+          "text": "Влажный тип"
+        }
+      ],
+      "image": "images/liugong-bev820te.png"
+    },
+    {
+      "id": 4,
+      "brand": "liugong",
+      "category": "excavators",
+      "name": "BEV 838TE",
+      "nameRu": "Электрический экскаватор",
+      "badge": "bg-success",
+      "badgeText": "Электро",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-battery-full",
+          "text": "Батарея: 193 кВтч"
+        },
+        {
+          "icon": "fa-tint",
+          "text": "Сухой тип"
+        }
+      ],
+      "image": "images/liugong-bev838te.png"
+    },
+    {
+      "id": 5,
+      "brand": "liugong",
+      "category": "loaders",
+      "name": "WL 855H",
+      "nameRu": "Колёсный погрузчик",
+      "badge": "bg-warning",
+      "badgeText": "Хит",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~17 т"
+        },
+        {
+          "icon": "fa-cog",
+          "text": "Двигатель: Yuchai"
+        },
+        {
+          "icon": "fa-box",
+          "text": "Ковш: 3.0 м³"
+        }
+      ],
+      "image": "images/liugong-wl855h.png"
+    },
+    {
+      "id": 6,
+      "brand": "liugong",
+      "category": "loaders",
+      "name": "WL 856H",
+      "nameRu": "Колёсный погрузчик",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~17 т"
+        },
+        {
+          "icon": "fa-box",
+          "text": "Ковш: 3.0 м³"
+        }
+      ],
+      "image": "images/liugong-wl856h.png"
+    },
+    {
+      "id": 7,
+      "brand": "liugong",
+      "category": "loaders",
+      "name": "WL 835H",
+      "nameRu": "Колёсный погрузчик",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~13.5 т"
+        },
+        {
+          "icon": "fa-cog",
+          "text": "Двигатель: Yuchai BS205"
+        }
+      ],
+      "image": "images/liugong-wl835h.png"
+    },
+    {
+      "id": 8,
+      "brand": "liugong",
+      "category": "loaders",
+      "name": "WL 835N",
+      "nameRu": "Колёсный погрузчик",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~13 т"
+        }
+      ],
+      "image": "images/liugong-wl835n.png"
+    },
+    {
+      "id": 9,
+      "brand": "liugong",
+      "category": "loaders",
+      "name": "CLG 855",
+      "nameRu": "Колёсный погрузчик",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~17 т"
+        }
+      ],
+      "image": "images/liugong-clg855.png"
+    },
+    {
+      "id": 10,
+      "brand": "liugong",
+      "category": "loaders",
+      "name": "ZL50CN",
+      "nameRu": "Колёсный погрузчик, 5 т",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~16 т"
+        }
+      ],
+      "image": "images/liugong-zl50cn.png"
+    },
+    {
+      "id": 11,
+      "brand": "liugong",
+      "category": "loaders",
+      "name": "BEV 906FE",
+      "nameRu": "Электрический погрузчик",
+      "badge": "bg-success",
+      "badgeText": "Электро",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-battery-full",
+          "text": "Батарея: 103.5 кВтч"
+        }
+      ],
+      "image": "images/liugong-bev906fe.png"
+    },
+    {
+      "id": 12,
+      "brand": "liugong",
+      "category": "loaders",
+      "name": "BEV 922FE",
+      "nameRu": "Электрический погрузчик",
+      "badge": "bg-success",
+      "badgeText": "Электро",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-battery-full",
+          "text": "Батарея: 423 кВтч"
+        }
+      ],
+      "image": "images/liugong-bev922fe.png"
+    },
+    {
+      "id": 13,
+      "brand": "liugong",
+      "category": "graders",
+      "name": "MG 4180D",
+      "nameRu": "Автогрейдер / Motor Grader",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~18 т"
+        }
+      ],
+      "image": "images/liugong-mg4180d.png"
+    },
+    {
+      "id": 14,
+      "brand": "liugong",
+      "category": "rollers",
+      "name": "RL 6118E",
+      "nameRu": "Виброкаток / Road Roller",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~18 т"
+        }
+      ],
+      "image": "images/liugong-rl6118e.png"
+    },
+    {
+      "id": 15,
+      "brand": "sinomach",
+      "category": "excavators",
+      "name": "GE520H",
+      "nameRu": "Карьерный экскаватор 50 т",
+      "badge": "bg-danger",
+      "badgeText": "Флагман",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "50 000 кг"
+        },
+        {
+          "icon": "fa-box",
+          "text": "Ковш: 3.2 м³"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "250 кВт (Cummins QSM11)"
+        }
+      ],
+      "image": "images/sinomach-ge520h.png"
+    },
+    {
+      "id": 16,
+      "brand": "sinomach",
+      "category": "excavators",
+      "name": "GE385D",
+      "nameRu": "Гусеничный экскаватор",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~38 500 кг"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "~214 кВт"
+        }
+      ],
+      "image": "images/sinomach-ge385d.png"
+    },
+    {
+      "id": 17,
+      "brand": "sinomach",
+      "category": "excavators",
+      "name": "GE365D",
+      "nameRu": "Гусеничный экскаватор",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~36 500 кг"
+        }
+      ],
+      "image": "images/sinomach-ge365d.png"
+    },
+    {
+      "id": 18,
+      "brand": "sinomach",
+      "category": "excavators",
+      "name": "GE330D",
+      "nameRu": "Гусеничный экскаватор",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "31 380 кг"
+        },
+        {
+          "icon": "fa-box",
+          "text": "Ковш: 1.4 м³"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "169 кВт (Cummins QSB7)"
+        }
+      ],
+      "image": "images/sinomach-ge330d.png"
+    },
+    {
+      "id": 19,
+      "brand": "sinomach",
+      "category": "excavators",
+      "name": "ZG3255LC-9C",
+      "nameRu": "Гусеничный экскаватор 25 т",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "25 000 кг"
+        },
+        {
+          "icon": "fa-box",
+          "text": "Ковш: 1.2 м³"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "133 кВт (Cummins)"
+        }
+      ],
+      "image": "images/sinomach-zg3255lc.png"
+    },
+    {
+      "id": 20,
+      "brand": "sinomach",
+      "category": "excavators",
+      "name": "ZG3225LC-9C",
+      "nameRu": "Гусеничный экскаватор 22 т",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "22 000 кг"
+        },
+        {
+          "icon": "fa-box",
+          "text": "Ковш: 1.0 м³"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "112 кВт (Cummins)"
+        }
+      ],
+      "image": "images/sinomach-zg3225lc.png"
+    },
+    {
+      "id": 21,
+      "brand": "sinomach",
+      "category": "excavators",
+      "name": "ZG3210-9D",
+      "nameRu": "Гусеничный экскаватор 21 т",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "21 000 кг"
+        },
+        {
+          "icon": "fa-box",
+          "text": "Ковш: 1.0 м³"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "112 кВт (Cummins)"
+        }
+      ],
+      "image": "images/sinomach-zg3210.png"
+    },
+    {
+      "id": 22,
+      "brand": "sinomach",
+      "category": "loaders",
+      "name": "GKM105P",
+      "nameRu": "Колёсный погрузчик 10.5 т",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "Грузоподъёмность: 10.5 т"
+        }
+      ],
+      "image": "images/sinomach-gkm105p.png"
+    },
+    {
+      "id": 23,
+      "brand": "sinomach",
+      "category": "loaders",
+      "name": "GKM90P",
+      "nameRu": "Колёсный погрузчик 9 т",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "Грузоподъёмность: 9 т"
+        }
+      ],
+      "image": "images/sinomach-gkm90p.png"
+    },
+    {
+      "id": 24,
+      "brand": "sinomach",
+      "category": "loaders",
+      "name": "936H",
+      "nameRu": "Колёсный погрузчик 3 т",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "10 200 кг"
+        },
+        {
+          "icon": "fa-box",
+          "text": "Ковш: 1.7 м³"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "96 кН"
+        }
+      ],
+      "image": "images/sinomach-936h.png"
+    },
+    {
+      "id": 25,
+      "brand": "sinomach",
+      "category": "loaders",
+      "name": "956H",
+      "nameRu": "Колёсный погрузчик 5-6 т",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "16 700 кг"
+        },
+        {
+          "icon": "fa-arrow-up",
+          "text": "Разгрузка: 3100 мм"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "165 кН"
+        }
+      ],
+      "image": "images/sinomach-956h.png"
+    },
+    {
+      "id": 26,
+      "brand": "sinomach",
+      "category": "graders",
+      "name": "719H",
+      "nameRu": "Автогрейдер",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "15 800 кг"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "140 кВт"
+        },
+        {
+          "icon": "fa-tachometer-alt",
+          "text": "49.2 км/ч"
+        }
+      ],
+      "image": "images/sinomach-719h.png"
+    },
+    {
+      "id": 27,
+      "brand": "sinomach",
+      "category": "graders",
+      "name": "722H",
+      "nameRu": "Автогрейдер",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-horse-head",
+          "text": "181-250 л.с."
+        },
+        {
+          "icon": "fa-sync-alt",
+          "text": "Радиус: 7400 мм"
+        }
+      ],
+      "image": "images/sinomach-722h.png"
+    },
+    {
+      "id": 28,
+      "brand": "sinomach",
+      "category": "graders",
+      "name": "160W",
+      "nameRu": "Автогрейдер",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~16 000 кг"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "125-170 кВт"
+        },
+        {
+          "icon": "fa-ruler",
+          "text": "Отвал: 3660 мм"
+        }
+      ],
+      "image": "images/sinomach-160w.png"
+    },
+    {
+      "id": 29,
+      "brand": "sinomach",
+      "category": "graders",
+      "name": "215W",
+      "nameRu": "Автогрейдер",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~21 500 кг"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "~160 кВт"
+        }
+      ],
+      "image": "images/sinomach-215w.png"
+    },
+    {
+      "id": 30,
+      "brand": "sinomach",
+      "category": "graders",
+      "name": "80W",
+      "nameRu": "Автогрейдер",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~8 000 кг"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "55 кВт"
+        }
+      ],
+      "image": "images/sinomach-80w.png"
+    },
+    {
+      "id": 31,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYS231",
+      "nameRu": "Однобарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~23 000 кг"
+        }
+      ],
+      "image": "images/sinomach-gys231.png"
+    },
+    {
+      "id": 32,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYS201",
+      "nameRu": "Однобарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~20 000 кг"
+        }
+      ],
+      "image": "images/sinomach-gys201.png"
+    },
+    {
+      "id": 33,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYS18",
+      "nameRu": "Однобарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~18 000 кг"
+        }
+      ],
+      "image": "images/sinomach-gys18.png"
+    },
+    {
+      "id": 34,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYS16",
+      "nameRu": "Однобарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~16 000 кг"
+        }
+      ],
+      "image": "images/sinomach-gys16.png"
+    },
+    {
+      "id": 35,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYS14",
+      "nameRu": "Однобарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~14 000 кг"
+        }
+      ],
+      "image": "images/sinomach-gys14.png"
+    },
+    {
+      "id": 36,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYD082",
+      "nameRu": "Двухбарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "8 000 кг"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "81 кВт"
+        },
+        {
+          "icon": "fa-wave-square",
+          "text": "45/50 Гц"
+        }
+      ],
+      "image": "images/sinomach-gyd082.png"
+    },
+    {
+      "id": 37,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYD102",
+      "nameRu": "Двухбарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~10 000 кг"
+        }
+      ],
+      "image": "images/sinomach-gyd102.png"
+    },
+    {
+      "id": 38,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYD122",
+      "nameRu": "Двухбарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~12 000 кг"
+        }
+      ],
+      "image": "images/sinomach-gyd122.png"
+    },
+    {
+      "id": 39,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYD142",
+      "nameRu": "Двухбарабанный виброкаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "~14 000 кг"
+        }
+      ],
+      "image": "images/sinomach-gyd142.png"
+    },
+    {
+      "id": 40,
+      "brand": "sinomach",
+      "category": "rollers",
+      "name": "GYR162 / GYR262",
+      "nameRu": "Пневмокаток",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "16/26 т"
+        }
+      ],
+      "image": "images/sinomach-gyr162.png"
+    },
+    {
+      "id": 41,
+      "brand": "sinomach",
+      "category": "trucks",
+      "name": "ZG750S",
+      "nameRu": "Карьерный самосвал",
+      "badge": "",
+      "price": "",
+      "priceDisplay": "По запросу",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "Грузоподъёмность: ~75 т"
+        }
+      ],
+      "image": "images/sinomach-zg750s.png"
+    },
+    {
+      "id": 42,
+      "brand": "sagmoto",
+      "category": "trucks",
+      "name": "X3s 6x4 Самосвал 25т",
+      "nameRu": "385 л.с., DAP Бишкек",
+      "badge": "",
+      "price": "46000",
+      "priceDisplay": "$46,000",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "25 т"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "385 л.с. (Cummins)"
+        },
+        {
+          "icon": "fa-shipping-alt",
+          "text": "Доставка: 70 дней"
+        }
+      ],
+      "image": "images/sagmoto-x3s-25t.png"
+    },
+    {
+      "id": 43,
+      "brand": "sagmoto",
+      "category": "trucks",
+      "name": "X3s 8x4 Самосвал 40т",
+      "nameRu": "DAP Бишкек",
+      "badge": "",
+      "price": "57000",
+      "priceDisplay": "$57,000",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "40 т"
+        },
+        {
+          "icon": "fa-shipping-alt",
+          "text": "Доставка: 75 дней"
+        }
+      ],
+      "image": "images/sagmoto-x3s-40t.png"
+    },
+    {
+      "id": 44,
+      "brand": "sagmoto",
+      "category": "trucks",
+      "name": "X7 4x2 Самосвал 10т",
+      "nameRu": "ЕвроII, FCA",
+      "badge": "",
+      "price": "28000",
+      "priceDisplay": "$28,000",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "10 т"
+        },
+        {
+          "icon": "fa-leaf",
+          "text": "ЕвроII"
+        },
+        {
+          "icon": "fa-shipping-alt",
+          "text": "Доставка: 65 дней"
+        }
+      ],
+      "image": "images/sagmoto-x7-10t.png"
+    },
+    {
+      "id": 45,
+      "brand": "sagmoto",
+      "category": "special",
+      "name": "X3s 6x4 Манипулятор 12т",
+      "nameRu": "Кран-манипулятор с задней лестницей",
+      "badge": "",
+      "price": "75000",
+      "priceDisplay": "$75,000",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "12 т"
+        },
+        {
+          "icon": "fa-cog",
+          "text": "6x4"
+        }
+      ],
+      "image": "images/sagmoto-x3s-manipulator.png"
+    },
+    {
+      "id": 46,
+      "brand": "sagmoto",
+      "category": "special",
+      "name": "X7 7t Манипулятор",
+      "nameRu": "ЕвроIII, DAP",
+      "badge": "",
+      "price": "45700",
+      "priceDisplay": "$45,700",
+      "specs": [
+        {
+          "icon": "fa-weight-hanging",
+          "text": "7 т"
+        },
+        {
+          "icon": "fa-ruler",
+          "text": "6.0 x 2.45 x 0.55 м"
+        },
+        {
+          "icon": "fa-leaf",
+          "text": "ЕвроIII"
+        }
+      ],
+      "image": "images/sagmoto-x7-manipulator.png"
+    },
+    {
+      "id": 47,
+      "brand": "sagmoto",
+      "category": "special",
+      "name": "X3s 6x4 Тягач",
+      "nameRu": "Седельный тягач, рессорная подвеска",
+      "badge": "",
+      "price": "49700",
+      "priceDisplay": "$49,700",
+      "specs": [
+        {
+          "icon": "fa-cog",
+          "text": "6x4"
+        },
+        {
+          "icon": "fa-shipping-alt",
+          "text": "Доставка: 70 дней"
+        }
+      ],
+      "image": "images/sagmoto-x3s-tractor.png"
+    },
+    {
+      "id": 48,
+      "brand": "sagmoto",
+      "category": "special",
+      "name": "X3s 8м³ Бетономешалка",
+      "nameRu": "Mixer truck, DAP Бишкек",
+      "badge": "",
+      "price": "57700",
+      "priceDisplay": "$57,700",
+      "specs": [
+        {
+          "icon": "fa-box",
+          "text": "8 м³"
+        },
+        {
+          "icon": "fa-horse-head",
+          "text": "385 л.с. (Cummins)"
+        },
+        {
+          "icon": "fa-shipping-alt",
+          "text": "Доставка: 75 дней"
+        }
+      ],
+      "image": "images/sagmoto-x3s-mixer.png"
+    },
+    {
+      "id": 49,
+      "brand": "sagmoto",
+      "category": "special",
+      "name": "X9 Уборочная машина",
+      "nameRu": "Машина для уборки, DAP",
+      "badge": "",
+      "price": "48700",
+      "priceDisplay": "$48,700",
+      "specs": [
+        {
+          "icon": "fa-cog",
+          "text": "4x2"
+        },
+        {
+          "icon": "fa-shipping-alt",
+          "text": "Доставка: 35 дней"
+        }
+      ],
+      "image": "images/sagmoto-x9-sweeper.png"
+    },
+    {
+      "id": 50,
+      "brand": "sagmoto",
+      "category": "special",
+      "name": "X7s Поливочная машина",
+      "nameRu": "10м³, DAP Бишкек",
+      "badge": "",
+      "price": "29300",
+      "priceDisplay": "$29,300",
+      "specs": [
+        {
+          "icon": "fa-box",
+          "text": "10 м³"
+        },
+        {
+          "icon": "fa-cog",
+          "text": "4x2, B140"
+        },
+        {
+          "icon": "fa-shipping-alt",
+          "text": "Доставка: 75 дней"
+        }
+      ],
+      "image": "images/sagmoto-x7s-water.png"
+    },
+    {
+      "id": 51,
+      "brand": "sagmoto",
+      "category": "special",
+      "name": "X9 Автозаправщик 5м³",
+      "nameRu": "FCA, ЕвроII",
+      "badge": "",
+      "price": "29000",
+      "priceDisplay": "$29,000",
+      "specs": [
+        {
+          "icon": "fa-box",
+          "text": "5 м³"
+        },
+        {
+          "icon": "fa-leaf",
+          "text": "ЕвроII"
+        }
+      ],
+      "image": "images/sagmoto-x9-fuel5.png"
+    },
+    {
+      "id": 52,
+      "brand": "sagmoto",
+      "category": "special",
+      "name": "X9 Автозаправщик 8м³",
+      "nameRu": "FCA, ЕвроII",
+      "badge": "",
+      "price": "30000",
+      "priceDisplay": "$30,000",
+      "specs": [
+        {
+          "icon": "fa-box",
+          "text": "8 м³"
+        },
+        {
+          "icon": "fa-leaf",
+          "text": "ЕвроII"
+        }
+      ],
+      "image": "images/sagmoto-x9-fuel8.png"
+    }
+  ]
+}

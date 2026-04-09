@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги - Строительная Техника</title>
+    <title>服务 - 百贺天成 BHTC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -217,35 +218,28 @@
             background-color: #c0392b;
             border-color: #c0392b;
         }
+
+        .lang-switcher .lang-btn { border: 1px solid #dee2e6; border-radius: 4px; background: transparent; color: #6c757d; font-size: 0.8rem; font-weight: 600; padding: 2px 8px; transition: all 0.2s; }
+        .lang-switcher .lang-btn:hover { border-color: var(--secondary-color); color: var(--secondary-color); }
+        .lang-switcher .lang-btn.active { background: var(--secondary-color); border-color: var(--secondary-color); color: white; }
     </style>
 </head>
 <body>
     <!-- Навигация -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <i class="fas fa-tools text-danger"></i> СтройТехника
-            </a>
+            <a class="navbar-brand" href="index.html"><i class="fas fa-tools text-danger"></i> 百贺天成 <small class="text-muted fw-normal" style="font-size:0.7em;">BHTC</small></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Продукция</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">О компании</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Контакты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="services.html">Услуги</a>
-                    </li>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html" data-i18n="nav.products">Продукция</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">О компании</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html" data-i18n="nav.services">Услуги</a></li>
+                    <li class="nav-item ms-lg-2"><div class="lang-switcher d-flex gap-1"></div></li>
                 </ul>
             </div>
         </div>
@@ -256,8 +250,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <h1 class="display-4 fw-bold">Наши услуги</h1>
-                    <p class="lead">Комплексные решения для строительной техники: от продажи до сервисного обслуживания</p>
+                    <h1 class="display-4 fw-bold" data-i18n="services.title">Наши услуги</h1>
+                    <p class="lead" data-i18n="services.subtitle">Комплексные решения для строительной техники: от продажи до сервисного обслуживания</p>
                 </div>
             </div>
         </div>
@@ -272,13 +266,13 @@
                         <div class="service-icon">
                             <i class="fas fa-tools"></i>
                         </div>
-                        <h4>Сервисное обслуживание</h4>
-                        <p>Регулярное техническое обслуживание, ремонт и диагностика строительной техники. Гарантия качества работ.</p>
+                        <h4 data-i18n="services.main.maint.title">Сервисное обслуживание</h4>
+                        <p data-i18n="services.main.maint.desc">Регулярное техническое обслуживание, ремонт и диагностика строительной техники. Гарантия качества работ.</p>
                         <ul class="list-unstyled text-start mt-3">
-                            <li><i class="fas fa-check text-success me-2"></i>Плановое ТО</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Экспресс-диагностика</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Капитальный ремонт</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Гарантия на работы</li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.maint.l1">Плановое ТО</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.maint.l2">Экспресс-диагностика</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.maint.l3">Капитальный ремонт</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.maint.l4">Гарантия на работы</span></li>
                         </ul>
                     </div>
                 </div>
@@ -287,13 +281,13 @@
                         <div class="service-icon">
                             <i class="fas fa-cogs"></i>
                         </div>
-                        <h4>Поставка запчастей</h4>
-                        <p>Оригинальные и качественные аналоги запчастей для строительной техники. Быстрая доставка по всей России.</p>
+                        <h4 data-i18n="services.main.parts.title">Поставка запчастей</h4>
+                        <p data-i18n="services.main.parts.desc">Оригинальные и качественные аналоги запчастей для строительной техники. Быстрая доставка по всей России.</p>
                         <ul class="list-unstyled text-start mt-3">
-                            <li><i class="fas fa-check text-success me-2"></i>Оригинальные запчасти</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Качественные аналоги</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Быстрая доставка</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Гарантия на запчасти</li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.parts.l1">Оригинальные запчасти</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.parts.l2">Качественные аналоги</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.parts.l3">Быстрая доставка</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.parts.l4">Гарантия на запчасти</span></li>
                         </ul>
                     </div>
                 </div>
@@ -302,13 +296,13 @@
                         <div class="service-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <h4>Обучение операторов</h4>
-                        <p>Профессиональное обучение операторов строительной техники. Сертификация и повышение квалификации.</p>
+                        <h4 data-i18n="services.main.train.title">Обучение операторов</h4>
+                        <p data-i18n="services.main.train.desc">Профессиональное обучение операторов строительной техники. Сертификация и повышение квалификации.</p>
                         <ul class="list-unstyled text-start mt-3">
-                            <li><i class="fas fa-check text-success me-2"></i>Базовое обучение</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Повышение квалификации</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Сертификация</li>
-                            <li><i class="fas fa-check text-success me-2"></i>Дистанционные курсы</li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.train.l1">Базовое обучение</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.train.l2">Повышение квалификации</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.train.l3">Сертификация</span></li>
+                            <li><i class="fas fa-check text-success me-2"></i><span data-i18n="services.main.train.l4">Дистанционные курсы</span></li>
                         </ul>
                     </div>
                 </div>
@@ -319,34 +313,34 @@
     <!-- Процесс работы -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Процесс работы с нами</h2>
+            <h2 class="text-center mb-5" data-i18n="services.process.title">Процесс работы с нами</h2>
             <div class="row">
                 <div class="col-md-3">
                     <div class="process-step">
                         <div class="step-number">1</div>
-                        <h5>Консультация</h5>
-                        <p>Анализ потребностей и подбор оптимального решения</p>
+                        <h5 data-i18n="services.process.1">Консультация</h5>
+                        <p data-i18n="services.process.1.desc">Анализ потребностей и подбор оптимального решения</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="process-step">
                         <div class="step-number">2</div>
-                        <h5>Подбор техники</h5>
-                        <p>Выбор подходящей техники из нашего каталога</p>
+                        <h5 data-i18n="services.process.2">Подбор техники</h5>
+                        <p data-i18n="services.process.2.desc">Выбор подходящей техники из нашего каталога</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="process-step">
                         <div class="step-number">3</div>
-                        <h5>Финансирование</h5>
-                        <p>Подбор оптимальной схемы финансирования</p>
+                        <h5 data-i18n="services.process.3">Финансирование</h5>
+                        <p data-i18n="services.process.3.desc">Подбор оптимальной схемы финансирования</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="process-step">
                         <div class="step-number">4</div>
-                        <h5>Обслуживание</h5>
-                        <p>Сервисное сопровождение и техническая поддержка</p>
+                        <h5 data-i18n="services.process.4">Обслуживание</h5>
+                        <p data-i18n="services.process.4.desc">Сервисное сопровождение и техническая поддержка</p>
                     </div>
                 </div>
             </div>
@@ -356,19 +350,19 @@
     <!-- Дополнительные услуги -->
     <section class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Дополнительные услуги</h2>
+            <h2 class="text-center mb-5" data-i18n="services.extra.title">Дополнительные услуги</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="service-feature">
                         <div class="feature-icon">
                             <i class="fas fa-file-contract"></i>
                         </div>
-                        <h4>Лизинг и кредит</h4>
-                        <p>Гибкие условия лизинга и кредитования строительной техники. Помощь в оформлении документов.</p>
+                        <h4 data-i18n="services.extra.lease.title">Лизинг и кредит</h4>
+                        <p data-i18n="services.extra.lease.desc">Гибкие условия лизинга и кредитования строительной техники. Помощь в оформлении документов.</p>
                         <ul>
-                            <li>Лизинг от 1 года</li>
-                            <li>Кредит от 3 лет</li>
-                            <li>Первоначальный взнос от 10%</li>
+                            <li data-i18n="services.extra.lease.l1">Лизинг от 1 года</li>
+                            <li data-i18n="services.extra.lease.l2">Кредит от 3 лет</li>
+                            <li data-i18n="services.extra.lease.l3">Первоначальный взнос от 10%</li>
                         </ul>
                     </div>
                 </div>
@@ -377,12 +371,12 @@
                         <div class="feature-icon">
                             <i class="fas fa-shipping-fast"></i>
                         </div>
-                        <h4>Доставка и логистика</h4>
-                        <p>Организация доставки техники в любую точку России. Таможенное оформление импортной техники.</p>
+                        <h4 data-i18n="services.extra.delivery.title">Доставка и логистика</h4>
+                        <p data-i18n="services.extra.delivery.desc">Организация доставки техники в любую точку России. Таможенное оформление импортной техники.</p>
                         <ul>
-                            <li>Доставка по РФ</li>
-                            <li>Монтаж на месте</li>
-                            <li>Таможенное оформление</li>
+                            <li data-i18n="services.extra.delivery.l1">Доставка по РФ</li>
+                            <li data-i18n="services.extra.delivery.l2">Монтаж на месте</li>
+                            <li data-i18n="services.extra.delivery.l3">Таможенное оформление</li>
                         </ul>
                     </div>
                 </div>
@@ -391,12 +385,12 @@
                         <div class="feature-icon">
                             <i class="fas fa-clipboard-check"></i>
                         </div>
-                        <h4>Технический аудит</h4>
-                        <p>Комплексная оценка состояния строительной техники. Рекомендации по обслуживанию и модернизации.</p>
+                        <h4 data-i18n="services.extra.audit.title">Технический аудит</h4>
+                        <p data-i18n="services.extra.audit.desc">Комплексная оценка состояния строительной техники. Рекомендации по обслуживанию и модернизации.</p>
                         <ul>
-                            <li>Диагностика техники</li>
-                            <li>Оценка износа</li>
-                            <li>Рекомендации по ремонту</li>
+                            <li data-i18n="services.extra.audit.l1">Диагностика техники</li>
+                            <li data-i18n="services.extra.audit.l2">Оценка износа</li>
+                            <li data-i18n="services.extra.audit.l3">Рекомендации по ремонту</li>
                         </ul>
                     </div>
                 </div>
@@ -407,56 +401,56 @@
     <!-- FAQ -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Часто задаваемые вопросы</h2>
+            <h2 class="text-center mb-5" data-i18n="services.faq.title">Часто задаваемые вопросы</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="faq-item">
                         <button class="faq-question">
-                            Какая гарантия предоставляется на технику?
+                            <span data-i18n="services.faq.q1">Какая гарантия предоставляется на технику?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>На новую технику предоставляется гарантия от производителя от 1 до 3 лет в зависимости от марки и модели. На технику с пробегом - гарантия от 6 месяцев. Все гарантийные обязательства прописываются в договоре.</p>
+                            <p data-i18n="services.faq.a1">На новую технику предоставляется гарантия от производителя от 1 до 3 лет в зависимости от марки и модели. На технику с пробегом - гарантия от 6 месяцев. Все гарантийные обязательства прописываются в договоре.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question">
-                            Как происходит сервисное обслуживание?
+                            <span data-i18n="services.faq.q2">Как происходит сервисное обслуживание?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Мы предлагаем несколько вариантов сервисного обслуживания: выездная диагностика на объекте, обслуживание в нашем сервисном центре, а также заключение договора на годовое сервисное сопровождение с фиксированной стоимостью.</p>
+                            <p data-i18n="services.faq.a2">Мы предлагаем несколько вариантов сервисного обслуживания: выездная диагностика на объекте, обслуживание в нашем сервисном центре, а также заключение договора на годовое сервисное сопровождение с фиксированной стоимостью.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question">
-                            Можно ли получить технику в лизинг?
+                            <span data-i18n="services.faq.q3">Можно ли получить технику в лизинг?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Да, мы сотрудничаем с ведущими лизинговыми компаниями и банками. Помогаем подобрать оптимальную схему лизинга или кредитования, сопровождаем процесс оформления документов.</p>
+                            <p data-i18n="services.faq.a3">Да, мы сотрудничаем с ведущими лизинговыми компаниями и банками. Помогаем подобрать оптимальную схему лизинга или кредитования, сопровождаем процесс оформления документов.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question">
-                            Есть ли обучение для операторов?
+                            <span data-i18n="services.faq.q4">Есть ли обучение для операторов?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Да, мы проводим обучение операторов строительной техники. Обучение включает теоретическую часть и практику на тренажерах и реальной технике. По окончании выдается сертификат.</p>
+                            <p data-i18n="services.faq.a4">Да, мы проводим обучение операторов строительной техники. Обучение включает теоретическую часть и практику на тренажерах и реальной технике. По окончании выдается сертификат.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question">
-                            Как быстро можно получить запчасти?
+                            <span data-i18n="services.faq.q5">Как быстро можно получить запчасти?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Большинство запчастей есть на складе в Москве - доставка 1-2 дня. Импортные запчасти доставляются от 7 до 21 дня в зависимости от производителя. При срочной необходимости организуем экспресс-доставку.</p>
+                            <p data-i18n="services.faq.a5">Большинство запчастей есть на складе в Москве - доставка 1-2 дня. Импортные запчасти доставляются от 7 до 21 дня в зависимости от производителя. При срочной необходимости организуем экспресс-доставку.</p>
                         </div>
                     </div>
                 </div>
@@ -469,37 +463,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h4 class="mb-4">СтройТехника</h4>
-                    <p>Профессиональная строительная техника и оборудование для ваших проектов.</p>
+                    <h4 class="mb-4">百贺天成 <small>BHTC</small></h4>
+                    <p data-i18n="footer.desc">Профессиональная строительная техника и оборудование для ваших проектов.</p>
                 </div>
                 <div class="col-md-4">
-                    <h4 class="mb-4">Контакты</h4>
+                    <h4 class="mb-4" data-i18n="footer.contacts">Контакты</h4>
                     <ul class="list-unstyled">
                         <li><i class="fas fa-map-marker-alt me-2"></i> Москва, ул. Строителей, 15</li>
                         <li><i class="fas fa-phone me-2"></i> +7 (495) 123-45-67</li>
-                        <li><i class="fas fa-envelope me-2"></i> info@stroitehnika.ru</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@bhtch.com</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h4 class="mb-4">Быстрые ссылки</h4>
+                    <h4 class="mb-4" data-i18n="footer.links">Быстрые ссылки</h4>
                     <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white text-decoration-none">Главная</a></li>
-                        <li><a href="products.html" class="text-white text-decoration-none">Каталог</a></li>
-                        <li><a href="about.html" class="text-white text-decoration-none">О компании</a></li>
-                        <li><a href="contact.html" class="text-white text-decoration-none">Контакты</a></li>
+                        <li><a href="index.html" class="text-white text-decoration-none" data-i18n="footer.home">Главная</a></li>
+                        <li><a href="products.html" class="text-white text-decoration-none" data-i18n="footer.catalog">Каталог</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none" data-i18n="footer.about">О компании</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none" data-i18n="footer.contact">Контакты</a></li>
                     </ul>
                 </div>
             </div>
             <hr class="my-4 bg-light">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="mb-0">&copy; 2026 СтройТехника. Все права защищены.</p>
+                    <p class="mb-0">&copy; 2026 百贺天成 BHTC. <span data-i18n="footer.copyright">Все права защищены.</span></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script>
         // FAQ аккордеон
         document.querySelectorAll('.faq-question').forEach(button => {

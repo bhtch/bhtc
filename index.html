@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Строительная Техника - Оборудование для Строительства</title>
-    <meta name="description" content="Профессиональная строительная техника: экскаваторы, погрузчики, краны и другое оборудование для строительных работ">
+    <title>BHTC 百贺天成 - Construction Machinery</title>
+    <meta name="description" content="Professional construction machinery: excavators, loaders, dump trucks from LiuGong, SINOMACH, SAGMOTO">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -143,6 +144,27 @@
                 font-size: 2rem;
             }
         }
+
+        /* 语言切换按钮 */
+        .lang-switcher .lang-btn {
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            background: transparent;
+            color: #6c757d;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            transition: all 0.2s;
+        }
+        .lang-switcher .lang-btn:hover {
+            border-color: var(--secondary-color);
+            color: var(--secondary-color);
+        }
+        .lang-switcher .lang-btn.active {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -150,27 +172,30 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <i class="fas fa-tools text-danger"></i> СтройТехника
+                <i class="fas fa-tools text-danger"></i> 百贺天成 <small class="text-muted fw-normal" style="font-size:0.7em;">BHTC</small>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Главная</a>
+                        <a class="nav-link active" href="index.html" data-i18n="nav.home">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Продукция</a>
+                        <a class="nav-link" href="products.html" data-i18n="nav.products">Продукция</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">О компании</a>
+                        <a class="nav-link" href="about.html" data-i18n="nav.about">О компании</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Контакты</a>
+                        <a class="nav-link" href="contact.html" data-i18n="nav.contact">Контакты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">Услуги</a>
+                        <a class="nav-link" href="services.html" data-i18n="nav.services">Услуги</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <div class="lang-switcher d-flex gap-1"></div>
                     </li>
                 </ul>
             </div>
@@ -182,52 +207,52 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h1 class="display-4 fw-bold mb-4">Профессиональная строительная техника</h1>
-                    <p class="lead mb-4">Широкий ассортимент строительного оборудования от ведущих мировых производителей. Надежность, качество и эффективность для ваших проектов.</p>
+                    <h1 class="display-4 fw-bold mb-4" data-i18n="hero.title">Строительная техника из Китая</h1>
+                    <p class="lead mb-4" data-i18n="hero.subtitle">Экскаваторы, погрузчики, самосвалы и спецтехника от LiuGong, SINOMACH и SAGMOTO. Прямые поставки, гарантия и сервис.</p>
                     <a href="products.html" class="btn btn-primary btn-lg me-3">
-                        <i class="fas fa-eye me-2"></i>Смотреть каталог
+                        <i class="fas fa-eye me-2"></i><span data-i18n="hero.catalog">Смотреть каталог</span>
                     </a>
-                    <a href="contact.html" class="btn btn-outline-light btn-lg">
-                        <i class="fas fa-phone me-2"></i>Заказать консультацию
+                    <a href="https://wa.me/8618167856752?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E%20%D0%BF%D0%BE%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B5" target="_blank" class="btn btn-lg" style="background-color:#25D366;border-color:#25D366;color:white;">
+                        <i class="fab fa-whatsapp me-2"></i><span data-i18n="hero.whatsapp">Написать в WhatsApp</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Категории техники -->
+    <!-- Бренды-партнеры -->
     <section class="product-category">
         <div class="container">
-            <h2 class="section-title">Категории техники</h2>
+            <h2 class="section-title" data-i18n="brands.title">Наши бренды</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-digging"></i>
+                        <div class="category-icon" style="color: #e74c3c;">
+                            <i class="fas fa-hard-hat"></i>
                         </div>
-                        <h4>Экскаваторы</h4>
-                        <p>Гусеничные и колесные экскаваторы различной мощности для земляных работ</p>
-                        <a href="products.html#excavators" class="btn btn-outline-primary">Подробнее</a>
+                        <h4>LiuGong</h4>
+                        <p data-i18n="brands.liugong">Экскаваторы, погрузчики, автогрейдеры, дорожные катки и электротехника. Более 60 лет опыта.</p>
+                        <a href="products.html#liugong" class="btn btn-outline-primary" data-i18n="brands.liugong.btn">Каталог LiuGong</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-truck-loading"></i>
+                        <div class="category-icon" style="color: #3498db;">
+                            <i class="fas fa-industry"></i>
                         </div>
-                        <h4>Погрузчики</h4>
-                        <p>Фронтальные погрузчики, мини-погрузчики и другая погрузочная техника</p>
-                        <a href="products.html#loaders" class="btn btn-outline-primary">Подробнее</a>
+                        <h4>SINOMACH</h4>
+                        <p data-i18n="brands.sinomach">Экскаваторы, погрузчики, дорожные катки и спецтехника. Государственная корпорация Китая.</p>
+                        <a href="products.html#sinomach" class="btn btn-outline-primary" data-i18n="brands.sinomach.btn">Каталог SINOMACH</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="category-card">
-                        <div class="category-icon">
-                            <i class="fas fa-crane"></i>
+                        <div class="category-icon" style="color: #27ae60;">
+                            <i class="fas fa-truck"></i>
                         </div>
-                        <h4>Краны</h4>
-                        <p>Башенные, автомобильные и гусеничные краны для строительных работ</p>
-                        <a href="products.html#cranes" class="btn btn-outline-primary">Подробнее</a>
+                        <h4>SAGMOTO</h4>
+                        <p data-i18n="brands.sagmoto">Самосвалы, манипуляторы, тягачи, бетономешалки, спецмашины. Доставка из Китая.</p>
+                        <a href="products.html#sagmoto" class="btn btn-outline-primary" data-i18n="brands.sagmoto.btn">Каталог SAGMOTO</a>
                     </div>
                 </div>
             </div>
@@ -237,47 +262,67 @@
     <!-- Популярная техника -->
     <section class="py-5">
         <div class="container">
-            <h2 class="section-title">Популярная техника</h2>
+            <h2 class="section-title" data-i18n="popular.title">Популярная техника</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Экскаватор Cat 320">
+                        <div style="height:220px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;">
+                            <span style="color:white;font-size:1.5rem;font-weight:bold;">LiuGong 906F</span>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Экскаватор Cat 320</h5>
-                            <p class="card-text">Мощный гусеничный экскаватор для сложных земляных работ. Вес: 20 тонн, мощность: 130 л.с.</p>
+                            <span class="badge bg-secondary mb-2">LiuGong</span>
+                            <h5 class="card-title">Мини-экскаватор LiuGong 906F</h5>
+                            <p class="card-text">Компактный гусеничный экскаватор. Вес: 6 тонн, мощность: 36.4 кВт. Идеален для малых строительных работ.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="h5 text-danger">$85,000</span>
-                                <a href="product-detail.html?id=1" class="btn btn-primary">Подробнее</a>
+                                <span class="h5 text-danger">По запросу</span>
+                                <a href="https://wa.me/8618167856752?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%D1%81%D1%8F%20LiuGong%20906F%20%D0%9C%D0%B8%D0%BD%D0%B8-%D1%8D%D0%BA%D1%81%D0%BA%D0%B0%D0%B2%D0%B0%D1%82%D0%BE%D1%80" target="_blank" class="btn btn-success">
+                                    <i class="fab fa-whatsapp me-1"></i>WhatsApp
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Погрузчик Volvo L220H">
+                        <div style="height:220px;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;">
+                            <span style="color:white;font-size:1.5rem;font-weight:bold;">SINOMACH GE520H</span>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Погрузчик Volvo L220H</h5>
-                            <p class="card-text">Фронтальный погрузчик для погрузочно-разгрузочных работ. Грузоподъемность: 6.5 тонн.</p>
+                            <span class="badge bg-secondary mb-2">SINOMACH</span>
+                            <h5 class="card-title">Экскаватор SINOMACH GE520H</h5>
+                            <p class="card-text">Мощный гусеничный экскаватор. Вес: 50 тонн, ковш: 3.2 м³, мощность: 250 кВт. Для масштабных проектов.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="h5 text-danger">$72,000</span>
-                                <a href="product-detail.html?id=2" class="btn btn-primary">Подробнее</a>
+                                <span class="h5 text-danger">По запросу</span>
+                                <a href="https://wa.me/8618167856752?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%D1%81%D1%8F%20SINOMACH%20GE520H%20%D0%AD%D0%BA%D1%81%D0%BA%D0%B0%D0%B2%D0%B0%D1%82%D0%BE%D1%80" target="_blank" class="btn btn-success">
+                                    <i class="fab fa-whatsapp me-1"></i>WhatsApp
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card product-card">
-                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Кран Liebherr LTM 1100">
+                        <div style="height:220px;background:linear-gradient(135deg,#4facfe,#00f2fe);display:flex;align-items:center;justify-content:center;">
+                            <span style="color:white;font-size:1.5rem;font-weight:bold;">SAGMOTO X3s 25t</span>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Кран Liebherr LTM 1100</h5>
-                            <p class="card-text">Мобильный кран с телескопической стрелой. Грузоподъемность: 100 тонн, вылет стрелы: 60 м.</p>
+                            <span class="badge bg-secondary mb-2">SAGMOTO</span>
+                            <h5 class="card-title">Самосвал SAGMOTO X3s 25t</h5>
+                            <p class="card-text">Самосвал грузоподъемностью 25 тонн. Надежная техника для добычи и строительства.</p>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="h5 text-danger">$150,000</span>
-                                <a href="product-detail.html?id=3" class="btn btn-primary">Подробнее</a>
+                                <span class="h5 text-danger">$46,000</span>
+                                <a href="https://wa.me/8618167856752?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%D1%81%D1%8F%20SAGMOTO%20X3s%2025t%20%D0%A1%D0%B0%D0%BC%D0%BE%D1%81%D0%B2%D0%B0%D0%BB%20($46,000)" target="_blank" class="btn btn-success">
+                                    <i class="fab fa-whatsapp me-1"></i>WhatsApp
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="products.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-th-list me-2"></i><span data-i18n="popular.viewall">Смотреть весь каталог (56 единиц)</span>
+                </a>
             </div>
         </div>
     </section>
@@ -285,35 +330,35 @@
     <!-- Преимущества -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Наши преимущества</h2>
+            <h2 class="section-title" data-i18n="advantages.title">Наши преимущества</h2>
             <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h5 data-i18n="advantages.direct">Прямые поставки</h5>
+                    <p data-i18n="advantages.direct.desc">Работаем напрямую с заводами LiuGong, SINOMACH и SAGMOTO</p>
+                </div>
                 <div class="col-md-3 text-center">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h5>Гарантия качества</h5>
-                    <p>Все машины проходят тщательную проверку перед поставкой</p>
-                </div>
-                <div class="col-md-3 text-center">
-                    <div class="feature-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h5>Техническая поддержка</h5>
-                    <p>Круглосуточная поддержка и сервисное обслуживание</p>
+                    <h5 data-i18n="advantages.quality">Гарантия качества</h5>
+                    <p data-i18n="advantages.quality.desc">Все машины проходят проверку и комплектуются документами</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="feature-icon">
                         <i class="fas fa-shipping-fast"></i>
                     </div>
-                    <h5>Быстрая доставка</h5>
-                    <p>Доставка техники в любую точку России и СНГ</p>
+                    <h5 data-i18n="advantages.delivery">Доставка в СНГ</h5>
+                    <p data-i18n="advantages.delivery.desc">Организуем доставку в Россию, Казахстан, Кыргызстан и другие страны</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="feature-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fab fa-whatsapp"></i>
                     </div>
-                    <h5>Финансирование</h5>
-                    <p>Гибкие условия кредитования и лизинга</p>
+                    <h5 data-i18n="advantages.fast">Быстрая связь</h5>
+                    <p data-i18n="advantages.fast.desc">Пишите нам в WhatsApp — ответим в течение часа</p>
                 </div>
             </div>
         </div>
@@ -324,8 +369,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h4 class="mb-4">СтройТехника</h4>
-                    <p>Профессиональная строительная техника и оборудование для ваших проектов. Качество, надежность и эффективность.</p>
+                    <h4 class="mb-4">百贺天成 <small>BHTC</small></h4>
+                    <p data-i18n="footer.desc">Профессиональная строительная техника и оборудование для ваших проектов. Качество, надежность и эффективность.</p>
                     <div class="mt-4">
                         <a href="#" class="text-white me-3"><i class="fab fa-vk fa-lg"></i></a>
                         <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-lg"></i></a>
@@ -333,34 +378,34 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <h4 class="mb-4">Контакты</h4>
+                    <h4 class="mb-4" data-i18n="footer.contacts">Контакты</h4>
                     <ul class="list-unstyled contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Строителей, 15</li>
-                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
-                        <li><i class="fas fa-envelope"></i> info@stroitehnika.ru</li>
-                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</li>
+                        <li><i class="fab fa-whatsapp" style="color:#25D366;"></i> <a href="https://wa.me/8618167856752" target="_blank" class="text-white text-decoration-none">WhatsApp: +86 181 6785 6752</a></li>
+                        <li><i class="fas fa-envelope"></i> info@bhtch.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9:00-18:00</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <h4 class="mb-4">Быстрые ссылки</h4>
+                    <h4 class="mb-4" data-i18n="footer.links">Быстрые ссылки</h4>
                     <ul class="list-unstyled">
-                        <li><a href="products.html" class="text-white text-decoration-none">Каталог техники</a></li>
-                        <li><a href="about.html" class="text-white text-decoration-none">О компании</a></li>
-                        <li><a href="services.html" class="text-white text-decoration-none">Услуги</a></li>
-                        <li><a href="contact.html" class="text-white text-decoration-none">Контакты</a></li>
+                        <li><a href="products.html" class="text-white text-decoration-none" data-i18n="footer.catalog">Каталог</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none" data-i18n="footer.about">О компании</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none" data-i18n="nav.services">Услуги</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none" data-i18n="footer.contact">Контакты</a></li>
                     </ul>
                 </div>
             </div>
             <hr class="my-4 bg-light">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p class="mb-0">&copy; 2026 СтройТехника. Все права защищены.</p>
+                    <p class="mb-0">&copy; 2026 百贺天成 BHTC. <span data-i18n="footer.copyright">Все права защищены.</span></p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/products.js"></script>
     <script src="js/form-validation.js"></script>
     <script src="js/image-gallery.js"></script>

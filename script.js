@@ -5,9 +5,10 @@
 
 // Конфигурация сайта
 const siteConfig = {
-    companyName: 'СтройТехника',
-    contactPhone: '+7 (495) 123-45-67',
-    contactEmail: 'info@stroitehnika.ru',
+    companyName: '百贺天成 BHTC',
+    contactPhone: '+86 181 6785 6752',
+    contactEmail: 'info@bhtch.com',
+    website: 'www.xjbhtch.com',
     apiBaseUrl: '/api',
     debugMode: false
 };
