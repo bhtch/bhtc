@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Строительная Техника - Оборудование для Строительства</title>
+    <meta name="description" content="Профессиональная строительная техника: экскаваторы, погрузчики, краны и другое оборудование для строительных работ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .section-title {
+            color: var(--primary-color);
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+        
+        .product-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .product-category {
+            background-color: var(--light-color);
+            padding: 60px 0;
+        }
+        
+        .category-card {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+        
+        .contact-info i {
+            color: var(--secondary-color);
+            margin-right: 10px;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            padding: 10px 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+            transform: translateY(-2px);
+        }
+        
+        .feature-icon {
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 80px 0;
+            }
+            
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-tools text-danger"></i> СтройТехника
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Продукция</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Услуги</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 fw-bold mb-4">Профессиональная строительная техника</h1>
+                    <p class="lead mb-4">Широкий ассортимент строительного оборудования от ведущих мировых производителей. Надежность, качество и эффективность для ваших проектов.</p>
+                    <a href="products.html" class="btn btn-primary btn-lg me-3">
+                        <i class="fas fa-eye me-2"></i>Смотреть каталог
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-phone me-2"></i>Заказать консультацию
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Категории техники -->
+    <section class="product-category">
+        <div class="container">
+            <h2 class="section-title">Категории техники</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-digging"></i>
+                        </div>
+                        <h4>Экскаваторы</h4>
+                        <p>Гусеничные и колесные экскаваторы различной мощности для земляных работ</p>
+                        <a href="products.html#excavators" class="btn btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-truck-loading"></i>
+                        </div>
+                        <h4>Погрузчики</h4>
+                        <p>Фронтальные погрузчики, мини-погрузчики и другая погрузочная техника</p>
+                        <a href="products.html#loaders" class="btn btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-crane"></i>
+                        </div>
+                        <h4>Краны</h4>
+                        <p>Башенные, автомобильные и гусеничные краны для строительных работ</p>
+                        <a href="products.html#cranes" class="btn btn-outline-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярная техника -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Популярная техника</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Экскаватор Cat 320">
+                        <div class="card-body">
+                            <h5 class="card-title">Экскаватор Cat 320</h5>
+                            <p class="card-text">Мощный гусеничный экскаватор для сложных земляных работ. Вес: 20 тонн, мощность: 130 л.с.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-danger">$85,000</span>
+                                <a href="product-detail.html?id=1" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Погрузчик Volvo L220H">
+                        <div class="card-body">
+                            <h5 class="card-title">Погрузчик Volvo L220H</h5>
+                            <p class="card-text">Фронтальный погрузчик для погрузочно-разгрузочных работ. Грузоподъемность: 6.5 тонн.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-danger">$72,000</span>
+                                <a href="product-detail.html?id=2" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Кран Liebherr LTM 1100">
+                        <div class="card-body">
+                            <h5 class="card-title">Кран Liebherr LTM 1100</h5>
+                            <p class="card-text">Мобильный кран с телескопической стрелой. Грузоподъемность: 100 тонн, вылет стрелы: 60 м.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-danger">$150,000</span>
+                                <a href="product-detail.html?id=3" class="btn btn-primary">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Наши преимущества</h2>
+            <div class="row g-4">
+                <div class="col-md-3 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5>Гарантия качества</h5>
+                    <p>Все машины проходят тщательную проверку перед поставкой</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h5>Техническая поддержка</h5>
+                    <p>Круглосуточная поддержка и сервисное обслуживание</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h5>Быстрая доставка</h5>
+                    <p>Доставка техники в любую точку России и СНГ</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h5>Финансирование</h5>
+                    <p>Гибкие условия кредитования и лизинга</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="mb-4">СтройТехника</h4>
+                    <p>Профессиональная строительная техника и оборудование для ваших проектов. Качество, надежность и эффективность.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="fab fa-vk fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-telegram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">Контакты</h4>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Строителей, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope"></i> info@stroitehnika.ru</li>
+                        <li><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">Быстрые ссылки</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-white text-decoration-none">Каталог техники</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">О компании</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none">Услуги</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2026 СтройТехника. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/image-gallery.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Простая функция для отслеживания кликов
+        document.querySelectorAll('.product-card .btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                const productName = this.closest('.card').querySelector('.card-title').textContent;
+                console.log(`Пользователь заинтересовался: ${productName}`);
+            });
+        });
+        
+        // Активация навигации при прокрутке
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('shadow');
+            } else {
+                navbar.classList.remove('shadow');
+            }
+        });
+    </script>
+</body>
+</html>

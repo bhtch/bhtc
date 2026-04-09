@@ -1,0 +1,40 @@
+# robots.txt для Строительной Техники
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://your-site.gitee.io/sitemap.xml
+
+# Запрещенные директории
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Разрешить поисковым системам индексировать
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Скорость сканирования
+Crawl-delay: 2
+
+# Дополнительные настройки для популярных ботов
+# Google Image Bot
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing Image Bot
+User-agent: msnbot-media
+Allow: /
+
+# Yandex Images
+User-agent: YandexImages
+Allow: /

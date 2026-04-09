@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали товара - Строительная Техника</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --accent-color: #3498db;
+            --light-color: #ecf0f1;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        
+        .product-detail-header {
+            background-color: var(--light-color);
+            padding: 100px 0 40px;
+            margin-top: 76px;
+        }
+        
+        .product-gallery img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .thumbnails img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .thumbnails img.active {
+            border-color: var(--secondary-color);
+        }
+        
+        .product-info {
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .product-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin: 20px 0;
+        }
+        
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .specs-table tr {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .specs-table td {
+            padding: 12px 0;
+        }
+        
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: var(--primary-color);
+            width: 40%;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            padding: 12px 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .btn-primary:hover {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        
+        .btn-outline-primary {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        
+        .features-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .features-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .features-list i {
+            color: var(--accent-color);
+            margin-right: 10px;
+        }
+        
+        .related-products {
+            background-color: var(--light-color);
+            padding: 60px 0;
+        }
+        
+        .related-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .related-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .related-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .breadcrumb {
+            background: transparent;
+            padding: 0;
+        }
+        
+        .breadcrumb-item a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-tools text-danger"></i> СтройТехника
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Продукция</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Услуги</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Хлебные крошки -->
+    <section class="product-detail-header">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">Каталог</a></li>
+                    <li class="breadcrumb-item"><a href="products.html#excavators">Экскаваторы</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Экскаватор Cat 320</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Детали продукта -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Галерея изображений -->
+                <div class="col-lg-6">
+                    <div class="product-gallery">
+                        <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             id="main-image" 
+                             alt="Экскаватор Cat 320" 
+                             class="img-fluid">
+                        
+                        <div class="thumbnails d-flex mt-3">
+                            <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                                 alt="Вид спереди" 
+                                 class="active"
+                                 onclick="changeImage(this.src)">
+                            <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&crop=left" 
+                                 alt="Вид сбоку"
+                                 onclick="changeImage(this.src)">
+                            <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&crop=top" 
+                                 alt="Кабина"
+                                 onclick="changeImage(this.src)">
+                            <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w-400&q=80&crop=right" 
+                                 alt="Рабочий орган"
+                                 onclick="changeImage(this.src)">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Информация о продукте -->
+                <div class="col-lg-6">
+                    <div class="product-info">
+                        <span class="badge bg-danger mb-3">Хит продаж</span>
+                        <h1 class="h2 mb-3">Экскаватор Cat 320</h1>
+                        <p class="text-muted mb-4">Гусеничный экскаватор среднего класса для сложных земляных работ</p>
+                        
+                        <div class="product-price">$85,000</div>
+                        
+                        <div class="mb-4">
+                            <h5>Краткое описание</h5>
+                            <p>Экскаватор Caterpillar 320 - это надежная и производительная машина для выполнения широкого спектра земляных работ. Идеально подходит для строительных площадок, карьеров и дорожных работ.</p>
+                        </div>
+                        
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-6">
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Экономичный двигатель</li>
+                                    <li><i class="fas fa-check"></i> Комфортная кабина</li>
+                                    <li><i class="fas fa-check"></i> Гидравлическая система Cat</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Система мониторинга</li>
+                                    <li><i class="fas fa-check"></i> Усиленная конструкция</li>
+                                    <li><i class="fas fa-check"></i> Низкий расход топлива</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid gap-2 d-md-flex mb-4">
+                            <button class="btn btn-primary me-md-2" onclick="orderProduct()">
+                                <i class="fas fa-shopping-cart me-2"></i>Заказать сейчас
+                            </button>
+                            <button class="btn btn-outline-primary" onclick="requestConsultation()">
+                                <i class="fas fa-phone me-2"></i>Заказать консультацию
+                            </button>
+                        </div>
+                        
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>В наличии:</strong> 2 единицы на складе в Москве. Доставка по России 7-14 дней.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Технические характеристики -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="product-info">
+                        <h3 class="mb-4">Технические характеристики</h3>
+                        <div class="table-responsive">
+                            <table class="specs-table">
+                                <tr>
+                                    <td>Производитель</td>
+                                    <td>Caterpillar Inc.</td>
+                                </tr>
+                                <tr>
+                                    <td>Модель</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>Тип</td>
+                                    <td>Гусеничный экскаватор</td>
+                                </tr>
+                                <tr>
+                                    <td>Вес</td>
+                                    <td>20,000 кг</td>
+                                </tr>
+                                <tr>
+                                    <td>Мощность двигателя</td>
+                                    <td>130 л.с. (97 кВт)</td>
+                                </tr>
+                                <tr>
+                                    <td>Объем двигателя</td>
+                                    <td>6.6 л</td>
+                                </tr>
+                                <tr>
+                                    <td>Емкость ковша</td>
+                                    <td>0.8 - 1.2 м³</td>
+                                </tr>
+                                <tr>
+                                    <td>Глубина копания</td>
+                                    <td>6.5 м</td>
+                                </tr>
+                                <tr>
+                                    <td>Радиус копания</td>
+                                    <td>9.8 м</td>
+                                </tr>
+                                <tr>
+                                    <td>Выгрузная высота</td>
+                                    <td>6.7 м</td>
+                                </tr>
+                                <tr>
+                                    <td>Скорость передвижения</td>
+                                    <td>5.5 км/ч</td>
+                                </tr>
+                                <tr>
+                                    <td>Габариты (Д×Ш×В)</td>
+                                    <td>9.4 × 2.8 × 3.1 м</td>
+                                </tr>
+                                <tr>
+                                    <td>Год выпуска</td>
+                                    <td>2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Состояние</td>
+                                    <td>Новый</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дополнительная информация -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="product-info">
+                        <h4 class="mb-3">Особенности</h4>
+                        <ul class="features-list">
+                            <li><i class="fas fa-cog"></i> Система Cat Connect для удаленного мониторинга</li>
+                            <li><i class="fas fa-tachometer-alt"></i> Экономичный режим работы</li>
+                            <li><i class="fas fa-snowflake"></i> Предпусковой подогреватель</li>
+                            <li><i class="fas fa-volume-up"></i> Низкий уровень шума</li>
+                            <li><i class="fas fa-chair"></i> Эргономичная кабина с кондиционером</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-info">
+                        <h4 class="mb-3">Комплектация</h4>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Основной ковш 1.0 м³</li>
+                            <li><i class="fas fa-check"></i> Набор быстросъемных соединений</li>
+                            <li><i class="fas fa-check"></i> Система центральной смазки</li>
+                            <li><i class="fas fa-check"></i> Защита кабины FOPS/ROPS</li>
+                            <li><i class="fas fa-check"></i> Комплект ЗИП</li>
+                            <li><i class="fas fa-check"></i> Техническая документация на русском языке</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Похожие товары -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="text-center mb-5">Похожие товары</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card related-card">
+                        <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Экскаватор Cat 315">
+                        <div class="card-body">
+                            <h5 class="card-title">Экскаватор Cat 315</h5>
+                            <p class="card-text">Гусеничный экскаватор для средних земляных работ</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-danger">$75,000</span>
+                                <a href="product-detail.html?id=7" class="btn btn-primary btn-sm">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card related-card">
+                        <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Экскаватор Komatsu PC200">
+                        <div class="card-body">
+                            <h5 class="card-title">Экскаватор Komatsu PC200</h5>
+                            <p class="card-text">Надежный японский экскаватор для строительных работ</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-danger">$78,000</span>
+                                <a href="product-detail.html?id=8" class="btn btn-primary btn-sm">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card related-card">
+                        <img src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Экскаватор Volvo EC210">
+                        <div class="card-body">
+                            <h5 class="card-title">Экскаватор Volvo EC210</h5>
+                            <p class="card-text">Шведский экскаватор с повышенной производительностью</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h5 text-danger">$82,000</span>
+                                <a href="product-detail.html?id=9" class="btn btn-primary btn-sm">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="mb-4">СтройТехника</h4>
+                    <p>Профессиональная строительная техника и оборудование для ваших проектов.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">Контакты</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Москва, ул. Строителей, 15</li>
+                        <li><i class="fas fa-phone me-2"></i> +7 (495) 123-45-67</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@stroitehnika.ru</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">Быстрые ссылки</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Главная</a></li>
+                        <li><a href="products.html" class="text-white text-decoration-none">Каталог</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">О компании</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2026 СтройТехника. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Функция смены основного изображения
+        function changeImage(src) {
+            document.getElementById('main-image').src = src;
+            
+            // Обновляем активную миниатюру
+            document.querySelectorAll('.thumbnails img').forEach(img => {
+                img.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+        
+        // Функция заказа товара
+        function orderProduct() {
+            const productName = document.querySelector('h1').textContent;
+            const price = document.querySelector('.product-price').textContent;
+            
+            alert(`Вы заказываете: ${productName}\nЦена: ${price}\n\nНаш менеджер свяжется с вами в течение 15 минут для уточнения деталей заказа.`);
+            
+            // Здесь можно добавить отправку данных на сервер
+            console.log(`Заказ: ${productName}, Цена: ${price}`);
+        }
+        
+        // Функция запроса консультации
+        function requestConsultation() {
+            const productName = document.querySelector('h1').textContent;
+            
+            alert(`Запрос консультации по товару: ${productName}\n\nНаш специалист свяжется с вами для консультации в течение 30 минут.`);
+            
+            // Здесь можно добавить отправку данных на сервер
+            console.log(`Запрос консультации: ${productName}`);
+        }
+        
+        // Имитация загрузки данных продукта по ID из URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            
+            if (productId) {
+                console.log(`Загрузка данных продукта с ID: ${productId}`);
+                // Здесь можно загрузить данные продукта с сервера
+            }
+        });
+    </script>
+</body>
+</html>
